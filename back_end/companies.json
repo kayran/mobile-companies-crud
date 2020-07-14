@@ -1,0 +1,16 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Empresa muito louca",
+      "real_name": "Empresa de Verdade",
+      "address": "Rua das empresas, 37A, Sebraeco",
+      "cnpj": "123123123213"
+    },
+    {
+      "id": 2,
+      "name": "Empresinha",
+      "real_name": "Grande Empresa"
+    }
+  ]
+}

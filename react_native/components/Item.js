@@ -15,14 +15,14 @@ export default function Item({ id, name, real_name, address, cnpj, navigation, h
       <View style={styles.data}>
           <Text style={styles.name}>Nome Fantasia: {name}</Text>
           <Text style={styles.name}>Razão Social: {real_name}</Text>
-          <Text>Endereço: {address}</Text>
-          <Text>CNPJ: {cnpj}</Text>
+          <Text style={styles.name}>Endereço: {address}</Text>
+          <Text style={styles.name}>CNPJ: {cnpj}</Text>
       </View>
       <View style={styles.buttons}>
           <View style={styles.button}>
             <Button
               style={styles.button}
-              title="Editar Empresa"
+              title="Editar"
               onPress={() => {
                 /* 1. Navigate to the Details route with params */
                 navigation.navigate("Editar Empresa", {
@@ -37,7 +37,8 @@ export default function Item({ id, name, real_name, address, cnpj, navigation, h
           </View>
           <View style={styles.button}>
             <Button
-              title="Deletar empresa"
+              color='#f05a5b'
+              title="Excluir"
               onPress={() => {
                 fetch("http://localhost:3001/companies/" + id, {
                   method: "delete",
@@ -63,18 +64,19 @@ const styles = StyleSheet.create({
   item: {
     flex:1,
     flexDirection: "col",
-    backgroundColor: "#F2F3F4",
+    backgroundColor: "#343434",
     padding: 10,
     marginVertical: 8,
     marginHorizontal: 16,
-    maxWidth: 320,
   },
   buttons: {
     alignItems: 'center',
-      flexDirection: 'row'
+    flexDirection: 'row',
+    fontSize: 13
   },
   name: {
     fontSize: 16,
+    color:'#fff',
   },
   button: {
     padding: 4,

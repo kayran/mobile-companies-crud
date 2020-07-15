@@ -97,7 +97,7 @@ const style = StyleSheet.create({
   form: {
     alignSelf: "stretch",
     paddingHorizontal: 30,
-    marginTop: 30,
+    marginTop: 15,
   },
   input: {
     borderWidth: 1,
@@ -105,9 +105,9 @@ const style = StyleSheet.create({
     paddingHorizontal: 20,
     fontSize: 16,
     color: "#444",
-    height: 44,
-    marginBottom: 20,
-    borderRadius: 2,
+    height: 30,
+    marginBottom: 15,
+    borderRadius: 5,
   },
   label: {
     fontWeight: "bold",
@@ -116,10 +116,10 @@ const style = StyleSheet.create({
   },
   buttom: {
     height: 42,
-    backgroundColor: "#f05a5b",
+    backgroundColor: "#2a792a",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 2,
+    borderRadius: 5,
   },
   buttonText: {
     color: "#fff",

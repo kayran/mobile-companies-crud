@@ -34,6 +34,7 @@ export default function CompanyList({ route, navigation, flag, handleChange }) {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
+        style={styles.container}
         data={companies}
         renderItem={({ item }) => (
           <Item

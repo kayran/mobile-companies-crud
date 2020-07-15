@@ -82,7 +82,7 @@ export default function CompanyEditForm({ route, navigation }) {
           onChangeText={(text) => setCnpj(text)}
         />
         <TouchableOpacity onPress={handleSubmit} style={style.buttom}>
-          <Text style={style.buttonText}>Editar Empresa</Text>
+          <Text style={style.buttonText}>Salvar</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -107,7 +107,7 @@ const style = StyleSheet.create({
     color: "#444",
     height: 44,
     marginBottom: 20,
-    borderRadius: 2,
+    borderRadius: 5,
   },
   label: {
     fontWeight: "bold",
@@ -116,10 +116,10 @@ const style = StyleSheet.create({
   },
   buttom: {
     height: 42,
-    backgroundColor: "#f05a5b",
+    backgroundColor: "#2196f3",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 2,
+    borderRadius: 5,
   },
   buttonText: {
     color: "#fff",
